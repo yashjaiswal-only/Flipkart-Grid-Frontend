@@ -131,7 +131,7 @@ const Cart = () => {
                                 <ProductAmount>{product.quantity}</ProductAmount>
                                 <Add onClick={()=>handleQuantity(product,"inc")}/>
                             </ProductAmountContainer>
-                            <ProductPrice>$ {product.price*product.quantity}</ProductPrice>
+                            <ProductPrice>$ {100*product.quantity}</ProductPrice>
                         </PriceDetail>
                             <DeleteIcon>
                                 <Tooltip title="Remove from cart">
