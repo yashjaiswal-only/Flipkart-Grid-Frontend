@@ -104,8 +104,6 @@ const Footer = () => {
                 <ListItem>Terms</ListItem>
                 <ListItem><Link className='link' to='/wishlist'>Wishlist</Link></ListItem>
                 <ListItem><Link className='link' to="/cart">Cart</Link></ListItem>
-                <ListItem><Link className='link' to={`/products/men`}>Men Fashion</Link></ListItem>
-                <ListItem><Link className='link' to={`/products/women`}>Women Fashion</Link></ListItem>
                 <ListItem><Link className='link' to='/profile'>My Account</Link></ListItem>
                 <ListItem><Link className='link' to='/orders'>Order Tracking</Link></ListItem>
             </List>
@@ -116,7 +114,7 @@ const Footer = () => {
                    655 main road , Lower Parel, Mumbai 110022
             </ContactItem>
             <ContactItem><Phone style={{marginRight:'10px'}}/>+91 8130060493</ContactItem>
-            <ContactItem><MailOutline style={{marginRight:'10px'}}/><a className='link' href='mailto:yashjaiswalonly@gmail.com'>yashjaiswalonly@gmail.com</a></ContactItem>
+            <ContactItem><MailOutline style={{marginRight:'10px'}}/><a className='link' href='mailto:yashjaiswalonly@gmail.com'>hidemates@gmail.com</a></ContactItem>
             {/* <Payment src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScJIkuSDps4zB6vwB5aL67O15VersKEPb3PA&usqp=CAU" /> */}
             <Payment src="https://www.transparentpng.com/thumb/payment-method/WNusu8-payment-method-kinds-transparent-picture.png" alt="Payment Method Kinds Transparent Picture @transparentpng.com"/>
       </Right>

@@ -28,10 +28,10 @@ const Products = ({query,all}) => {
     console.log('search'+query)
     try {
         const res =await axios.get(process.env.REACT_APP_BASE_URL+"/products/search?search="+query);
-        // const simRes =await axios.get(process.env.REACT_APP_BASE_URL+"/products/getSimilar?search="+query);
+        const simRes =await axios.get(process.env.REACT_APP_BASE_URL+"/products/getSimilar?search="+query);
         console.log(res.data)
         setProducts(res.data)
-        // setSimilarProducts(simRes.data)
+        setSimilarProducts(simRes.data)
     } catch (err) { }
   }
   useEffect(()=>{
