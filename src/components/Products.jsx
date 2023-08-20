@@ -15,6 +15,7 @@ const Container=styled.div`
 const Products = ({query,all}) => {
 
   const [products,setProducts]=useState([]);
+  const [similarProducts, setSimilarProducts] = useState([]);
   const getProducts = async ()=>{
     console.log('get')
     try {
@@ -23,12 +24,14 @@ const Products = ({query,all}) => {
         setProducts(res.data);
     } catch (err) { }
   }
-  const searchProducts = async ()=>{
+  const searchProducts = async (query)=>{
     console.log('search')
     try {
         const res =await axios.get(process.env.REACT_APP_BASE_URL+"/products/search?search="+query);
+        const simRes =await axios.get(process.env.REACT_APP_BASE_URL+"/products/getSimilar?search="+query);
         console.log(res.data)
-        setProducts(res.data);
+        setProducts(res.data)
+        setSimilarProducts(simRes.data)
     } catch (err) { }
   }
   useEffect(()=>{
@@ -38,7 +41,12 @@ const Products = ({query,all}) => {
 
   return (
     <Container>
-          { all && products.map((item)=>(<Product key={item._id} item={item}  /> ))}
+        Searched Products
+          { products.length && products.map((item)=>(<Product key={item._id} item={item}  /> ))}
+
+        Similar Products
+          { similarProducts.length && similarProducts.map((item)=>(<Product key={item._id} item={item}  /> ))}
+          
           
           {!products.length && <CircularProgress/> } 
 
