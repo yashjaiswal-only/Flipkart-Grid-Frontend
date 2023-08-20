@@ -29,45 +29,45 @@ export const sliderItems=[
 export const categories = [
     {
       id: 1,
-      img: "https://images.pexels.com/photos/2897524/pexels-photo-2897524.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "CLASSIC FALL",
-      head:'mens fashion',
-      cat:"men"
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaPxWRqmWATe5VRrmLpyHf3tLHoQEqY3pQ2Botam9R-6MAUI77-rt84UPwUYITGSV_lKY&usqp=CAU",
+      title: "BLISSFULL GARDEN",
+      head:'planting',
+      cat:"garden"
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/1844132/pexels-photo-1844132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      title: "LOUNGEWEAR LOVE",
-      head:'women fashion',
-      cat:"women"
+      img: "https://static8.depositphotos.com/1064024/1068/i/950/depositphotos_10681426-stock-photo-set-of-different-tools.jpg",
+      title: "TOOLBOX",
+      head:'made for home',
+      cat:"tool"
     },
     {
       id: 3,
-      img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      title: "SPRING FASHION",
-      head:'rebound dresses',
-      cat:"dress"
+      img: "https://media.istockphoto.com/id/501061554/photo/young-plants.jpg?s=612x612&w=0&k=20&c=UNUAPzRkQoxgq4RD6VryNhYb0ONMjQ6055zivgqTs0s=",
+      title: "WATERING",
+      head:'rebound sprinkles',
+      cat:"water"
     },
     {
       id: 4,
-      img: "https://images.pexels.com/photos/1957154/pexels-photo-1957154.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "VINTAGE DENIM",
-      head:'street jeans',
-      cat:"jeans"
+      img: "https://media.istockphoto.com/id/1415799772/photo/home-interior-with-vintage-furniture.webp?b=1&s=170667a&w=0&k=20&c=7n4U6vnFtYrX-FE84s2GXIzqkBIkvPTAE2uG8mB8MLA=",
+      title: "FURNITURE",
+      head:'street belt',
+      cat:"furniture"
     },
     {
       id: 5,
-      img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "SHIRT STYLE",
-      head:'summer fashion',
-      cat:"tshirt"
+      img: "https://media.weddingz.in/images/20230510173336/TWD-India-800x999.jpg",
+      title: "styleness",
+      head:'Decoration',
+      cat:"decor"
     },
     {
       id: 6,
-      img: "https://images.pexels.com/photos/1858407/pexels-photo-1858407.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "FOOTWEAR",
-      head:'walk in',
-      cat:"shoe"
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM1rXTn5s4z1EDmRSpeaOtK7a19yOXTKbHlw&usqp=CAU",
+      title: "Metallic beuty",
+      head:'Hardness',
+      cat:"metal"
     },
 ];
 

@@ -25,10 +25,14 @@ const Info=styled.div`
     align-items: center;
     justify-content: center;
     flex-direction:column;
-
-`
+    border:2px solid white;
+    `
 const Title=styled.h1`
-    color:white;
+    text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
+    color:yellow;
     margin-bottom:20px;
     
 `

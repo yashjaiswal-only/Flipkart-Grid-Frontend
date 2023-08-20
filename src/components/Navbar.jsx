@@ -24,7 +24,7 @@ const Container = styled.div`
     padding: 0;
     top: 0;
     width: 100vw;
-    z-index:900;
+    z-index:90000;
     position:fixed; 
     /* sticky navbar */
 `
@@ -152,7 +152,7 @@ const Navbar = () => {
             </Left>
 
             <Center><Link to='/' className='link'>
-                <Logo>Fashify</Logo></Link>
+                <Logo>ChoiceHarbor</Logo></Link>
             </Center>
 
             <Right>

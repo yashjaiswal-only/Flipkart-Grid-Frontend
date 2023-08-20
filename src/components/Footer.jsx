@@ -78,9 +78,9 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>Fashify</Logo>
+        <Logo>Choiceharbor</Logo>
         <Desc>
-        Fashify has some awesome values for their fitness and every day line. They focus on being green, providing quality and practical pieces and is run by family and valued by family. They have adorable styles for men, women, and kids.
+        ChoiceHarbor has some awesome values for their fitness and every day line. They focus on being green, providing quality and practical pieces and is run by family and valued by family. They have adorable styles for men, women, and kids.
         </Desc>
         <SocialContainer>
             <SocialIcon color="3B5999">

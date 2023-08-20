@@ -25,13 +25,13 @@ const Products = ({query,all}) => {
     } catch (err) { }
   }
   const searchProducts = async (query)=>{
-    console.log('search')
+    console.log('search'+query)
     try {
         const res =await axios.get(process.env.REACT_APP_BASE_URL+"/products/search?search="+query);
-        const simRes =await axios.get(process.env.REACT_APP_BASE_URL+"/products/getSimilar?search="+query);
+        // const simRes =await axios.get(process.env.REACT_APP_BASE_URL+"/products/getSimilar?search="+query);
         console.log(res.data)
         setProducts(res.data)
-        setSimilarProducts(simRes.data)
+        // setSimilarProducts(simRes.data)
     } catch (err) { }
   }
   useEffect(()=>{
@@ -40,17 +40,16 @@ const Products = ({query,all}) => {
   },[query])
 
   return (
+    <>
+      <span style={{margin:'20px',fontSize:'1.5rem',fontWeigh:'600'}}>Searched Products</span>
     <Container>
-        Searched Products
-          { products.length && products.map((item)=>(<Product key={item._id} item={item}  /> ))}
-
-        Similar Products
-          { similarProducts.length && similarProducts.map((item)=>(<Product key={item._id} item={item}  /> ))}
-          
-          
-          {!products.length && <CircularProgress/> } 
-
+        {products.length?products.map((item)=>(<Product key={item._id} item={item}/>)):<CircularProgress/>}
     </Container>
+      <span style={{margin:'20px',fontSize:'1.5rem',fontWeigh:'600'}}>Similar Products</span>
+    <Container>
+        { similarProducts.length?similarProducts.map((item)=>(<Product key={item._id} item={item}/>)):<CircularProgress/>}
+    </Container>
+    </>
   )
 }
 
