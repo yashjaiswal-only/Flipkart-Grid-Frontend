@@ -14,7 +14,8 @@ const Product = () => {
     const location = useLocation();
     const id=location.pathname.split("/")[2];
     const productsInCart=useSelector(state=>state.cart?state.cart.products:state.cart);
-    const total=useSelector(state=>state.cart?state.cart.total:state.cart);
+    var total=useSelector(state=>state.cart?state.cart.total:0);
+    console.log(total)
     const user=useSelector(state=>state.user?state.user.currentUser:state.user); 
     const [quantity,setQuantity]=useState(1);
     const [product,setProduct]=useState({});
@@ -24,6 +25,7 @@ const Product = () => {
     }
     const dispatch=useDispatch();
     const handleClick=()=>{
+        if(!total)  total=0;
         //update cart
         if(user){
             const choosenProduct={
@@ -33,14 +35,13 @@ const Product = () => {
                 img:product.img,
                 color:product.color[0],
                 size:product.size[0],
-                price:product.price,
+                price:100,
                 quantity:quantity
             };
-            const cost=choosenProduct.price*choosenProduct.quantity;
+            const cost=100*choosenProduct.quantity;
             const updatedProducts=[...productsInCart,{...choosenProduct}];
             addToCart(dispatch,user._id,updatedProducts,total+cost,user.accessToken) 
-            //color is size is monotonic till there its not including in product to add to cart
-                
+            //color is size is monotonic till there its not including in product to add to cart     
         }
     }
     

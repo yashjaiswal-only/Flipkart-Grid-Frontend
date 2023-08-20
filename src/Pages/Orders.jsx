@@ -11,7 +11,7 @@ import { Link, useNavigate } from 'react-router-dom'
 const Orders = () => {
   const orders=useSelector(state=>state.order?state.order.orders:state.order);
   const list=useSelector(state=>state.list)
-  // console.log(orders)
+  console.log(orders)
 
   //to get to top on rendering
   useEffect(() => { 

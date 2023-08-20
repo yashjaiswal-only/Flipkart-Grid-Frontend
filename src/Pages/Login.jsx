@@ -89,7 +89,7 @@ const Login = () => {
   }
   // console.log(location)  // we have a state in location 
   const newlyRegister=location.state?location.state.newlyRegister:null;
-  return ( 
+  return (  
     <Container>
       <Wrapper>
             <Title >SIGN IN</Title>

@@ -24,10 +24,9 @@ const Order = ({order}) => {
         arr.forEach(element=>{address+=element+' '; });
         return address;
     }
-
+console.log(order)
   return (
     <>
-   
    <Accordion  expanded={expanded === 'panel1'} onChange={handleChange('panel1')}
    sx={{
     margin:'1rem'
@@ -71,10 +70,9 @@ const Order = ({order}) => {
                     <Info>
                         <Left>
                         <ProductName>{product.title.toUpperCase()}</ProductName>
-                        <ProductDetails>{product.color.toUpperCase()} | {product.size}</ProductDetails>
                         </Left>
                         <Right>
-                        <ProductPrice>${product.price}</ProductPrice>
+                        <ProductPrice>$100</ProductPrice>
                         <ProductQuantity>Qty : {product.quantity}</ProductQuantity>
                         </Right>
                     </Info>

@@ -28,9 +28,9 @@ const Products = ({query,all}) => {
     console.log('search'+query)
     try {
         const res =await axios.get(process.env.REACT_APP_BASE_URL+"/products/search?search="+query);
-        const simRes =await axios.get(process.env.REACT_APP_BASE_URL+"/products/getSimilar?search="+query);
-        console.log(res.data)
         setProducts(res.data)
+        console.log(res.data)
+        const simRes =await axios.get(process.env.REACT_APP_BASE_URL+"/products/getSimilar?search="+query);
         setSimilarProducts(simRes.data)
     } catch (err) { }
   }
